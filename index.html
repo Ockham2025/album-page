@@ -10,7 +10,11 @@
       color: #111;
       font-family: 'Courier New', Courier, monospace;
       text-align: center;
-      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
 
     .typewriter h1 {
@@ -51,7 +55,7 @@
       font-size: 4.5vw;
       color: #333;
       margin-top: 0.5em;
-      animation: blinkText 1.5s infinite alternate; /* Миготлива анімація */
+      animation: blinkText 1.5s infinite alternate;
     }
 
     .link {
@@ -71,26 +75,3 @@
     }
 
     @keyframes blinkText {
-      0% { opacity: 1; }
-      50% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    @media (min-width: 600px) {
-      .typewriter h1 { font-size: 2.5em; }
-      h2 { font-size: 1.5em; }
-      p, .link { font-size: 1.2em; }
-    }
-  </style>
-</head>
-<body>
-  <div class="typewriter">
-    <h1>
-      Порізано<br>Бритвою<br>Оккама
-    </h1>
-  </div>
-  <h2>2025</h2>
-  <p>Coming Soon</p>
-  <a class="link" href="https://franco.com.ua" target="_blank">franco.com.ua</a>
-</body>
-</html>
