@@ -16,13 +16,13 @@
     .typewriter h1 {
       display: inline-block;
       overflow: hidden;
-      border-right: .15em solid #111;
       white-space: nowrap;
       margin: 0 auto;
       letter-spacing: .1em;
       animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
       font-size: 6vw;
       max-width: 100%;
+      word-wrap: break-word;
     }
 
     @keyframes typing {
@@ -35,7 +35,7 @@
       50% { border-color: #111 }
     }
 
-    h2, p, a {
+    h2, p, .link {
       opacity: 0;
       animation: fadeIn 1s ease forwards;
       animation-delay: 4.5s;
@@ -53,21 +53,16 @@
       margin-top: 0.5em;
     }
 
-    a {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 28px;
-      background: #111;
-      color: #fff;
+    .link {
+      font-size: 4.2vw;
+      color: #333;
       text-decoration: none;
       font-weight: 600;
-      font-size: 4.2vw;
-      border-radius: 8px;
-      transition: background 0.2s;
+      margin-top: 30px;
     }
 
-    a:hover {
-      background: #333;
+    .link:hover {
+      color: #111;
     }
 
     @keyframes fadeIn {
@@ -77,16 +72,18 @@
     @media (min-width: 600px) {
       .typewriter h1 { font-size: 2.5em; }
       h2 { font-size: 1.5em; }
-      p, a { font-size: 1.2em; }
+      p, .link { font-size: 1.2em; }
     }
   </style>
 </head>
 <body>
   <div class="typewriter">
-    <h1>Порізано Бритвою Оккама</h1>
+    <h1>
+      Порізано<br>Бритвою<br>Оккама
+    </h1>
   </div>
   <h2>2025</h2>
   <p>Coming Soon</p>
-  <a href="https://franco.com.ua" target="_blank">franco.com.ua</a>
+  <a class="link" href="https://franco.com.ua" target="_blank">franco.com.ua</a>
 </body>
 </html>
