@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Порізано Бритвою Оккама</title>
   <style>
     body {
@@ -11,6 +11,9 @@
       font-family: 'Courier New', Courier, monospace;
       text-align: center;
       padding: 60px 20px;
+      position: relative;
+      min-height: 100vh;
+      box-sizing: border-box;
     }
 
     .typewriter h1 {
@@ -18,24 +21,35 @@
       overflow: hidden;
       white-space: nowrap;
       margin: 0 auto;
-      letter-spacing: .1em;
-      animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+      letter-spacing: 0.1em;
+      animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
       font-size: 6vw;
       max-width: 100%;
       word-wrap: break-word;
     }
 
     @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
     }
 
     @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: #111 }
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: #111;
+      }
     }
 
-    h2, p, .link {
+    h2,
+    p,
+    .link {
       opacity: 0;
       animation: fadeIn 1s ease forwards;
       animation-delay: 4.5s;
@@ -67,30 +81,62 @@
     }
 
     @keyframes fadeIn {
-      to { opacity: 1 }
+      to {
+        opacity: 1;
+      }
     }
 
     @keyframes blinkText {
-      0% { opacity: 1; }
-      50% { opacity: 0; }
-      100% { opacity: 1; }
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
 
     @media (min-width: 600px) {
-      .typewriter h1 { font-size: 2.5em; }
-      h2 { font-size: 1.5em; }
-      p, .link { font-size: 1.2em; }
+      .typewriter h1 {
+        font-size: 2.5em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      p,
+      .link {
+        font-size: 1.2em;
+      }
+    }
+
+    /* Новий стиль для футера */
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 0.9em;
+      color: #777;
+      user-select: none;
+      font-family: 'Courier New', Courier, monospace;
     }
   </style>
 </head>
 <body>
   <div class="typewriter">
     <h1>
-      Порізано<br>Бритвою<br>Оккама
+      Порізано<br />
+      Бритвою<br />
+      Оккама
     </h1>
   </div>
   <h2>2025</h2>
   <p>Coming Soon</p>
   <a class="link" href="https://franco.com.ua" target="_blank">franco.com.ua</a>
+
+  <footer>
+    &copy; 2025 Faint Trigger Bureau
+  </footer>
 </body>
 </html>
