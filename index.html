@@ -63,7 +63,7 @@
       }
     }
 
-    h2, p, .link {
+    h2, p, .link, #tracklist {
       opacity: 0;
       animation: fadeIn 1s ease forwards;
       animation-delay: 4.5s;
@@ -94,6 +94,33 @@
       color: #111;
     }
 
+    #tracklist {
+      margin-top: 2em;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 4vw;
+      line-height: 1.6;
+    }
+
+    #tracklist h3 {
+      text-align: center;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #444;
+      margin-bottom: 1em;
+    }
+
+    #tracklist ol {
+      padding-left: 1.2em;
+    }
+
+    #tracklist li span {
+      color: #777;
+    }
+
     @keyframes fadeIn {
       to {
         opacity: 1;
@@ -110,6 +137,7 @@
       .typewriter h1 { font-size: 2.5em; }
       h2 { font-size: 1.5em; }
       p, .link { font-size: 1.2em; }
+      #tracklist { font-size: 1.1em; }
     }
 
     footer {
@@ -131,6 +159,24 @@
   </div>
   <h2>2025</h2>
   <p>Coming Soon</p>
+
+  <!-- Трек-лист -->
+  <section id="tracklist">
+    <h3>Трек-лист</h3>
+    <ol>
+      <li><strong>Довго-довго</strong> <span>(Човен)</span></li>
+      <li><strong>Ніч і вино</strong> <span>(27 дверей)</span></li>
+      <li><strong>Грім і кров</strong> <span>(Хто тут я)</span></li>
+      <li><strong>Мовчання на краю світу</strong> <span>(Не пиши)</span></li>
+      <li><strong>Кислота</strong> <span>(Затемнилось)</span></li>
+      <li><strong>Сам на сам</strong> <span>(Живу з тобою)</span></li>
+      <li><strong>Сартр</strong> <span>(Кокосові слова)</span></li>
+      <li><strong>Сад</strong> <span>(Ти забери назад)</span></li>
+      <li><strong>Маяк не працює</strong> <span>(Сльози падали)</span></li>
+      <li><strong>Повернення</strong> <span>(І сонце сходить)</span></li>
+    </ol>
+  </section>
+
   <a class="link" href="https://franco.com.ua" target="_blank">franco.com.ua</a>
 
   <footer>
